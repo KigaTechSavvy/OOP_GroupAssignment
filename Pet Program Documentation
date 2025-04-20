@@ -1,0 +1,89 @@
+🎯 Objective
+To simulate a virtual pet using Python OOP concepts. 
+The pet, named Rex_Pappi, has states like hunger, energy, and happiness, and can perform actions such as eating, sleeping, playing, learning tricks, and showing its status.
+
+🧱 Class Definition
+class Pet
+Represents a virtual pet with emotional and physical states.
+
+🔧 Constructor
+def __init__(self, name):
+Initializes a new Pet object.
+
+Parameters:
+name (str): The name of the pet.
+
+Initializes:
+hunger (int): Starting at 5 (0 = full, 10 = starving)
+
+energy (int): Starting at 5 (0 = exhausted, 10 = fully rested)
+
+happiness (int): Starting at 5 (0 = sad, 10 = very happy)
+
+tricks (list): Empty list to store learned tricks
+
+⚙️ Methods
+eat()
+Feeds the pet.
+
+Decreases hunger by 3 (minimum 0)
+
+Increases happiness by 1 (maximum 10)
+
+Prints a message about the action
+
+sleep()
+Lets the pet rest.
+
+Increases energy by 5 (maximum 10)
+
+Prints a message about the nap
+
+play()
+Plays with the pet, which affects multiple stats.
+
+Requires at least 2 energy to play
+
+Decreases energy by 2
+
+Increases happiness by 2 (max 10)
+
+Increases hunger by 1 (max 10)
+
+Prints a message or a warning if too tired
+
+train(trick)
+Teaches the pet a new trick.
+
+Parameters:
+trick (str): The name of the trick to be learned
+
+Adds trick to the tricks list (if not already learned)
+
+Increases happiness by 1 (max 10)
+
+Informs if the trick is new or already known
+
+show_tricks()
+Displays all tricks the pet has learned.
+
+If no tricks, prints an appropriate message
+
+If tricks exist, lists them comma-separated
+
+get_status()
+Prints the current state of the pet.
+
+Displays hunger, energy, and happiness (values out of 10)
+
+💡 Extensions Ideas
+Add mood based on hunger/energy/happiness levels
+
+Create a user input loop to interact with Rex_Pappi live
+
+Save and load pet state using files
+
+
+
+
+
